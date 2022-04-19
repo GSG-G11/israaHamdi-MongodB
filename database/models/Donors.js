@@ -6,10 +6,10 @@ const donorsSchema = new Schema({
     contactNumber : { type: 'number', required: true },
     bloodbank: {
 		type: Schema.Types.ObjectId,
-		ref: 'BloodBank',
+		ref: 'bloodbanks',
 	},
 });
 
-const Donors = model('donor', donorsSchema);
+const Donors = model('donors', donorsSchema);
 
 module.exports = Donors;
