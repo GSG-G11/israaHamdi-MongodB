@@ -25,7 +25,7 @@ const createDonors = ({ name, bloodGroup, contactNumber, bloodBank }) => {
     })
     .catch((err) => console.log(err, "54654"));
 };
-const findAll = () => Donors.find().populate("bloodbank");
+const findAll = () => Donors.find()
 
 module.exports = {
   createDonors,
